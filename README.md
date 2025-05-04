@@ -12,3 +12,7 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 
 ##
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+
+### Authors of the data
+>- Marek Simka (xsimka01@vut.cz) (BUT), Ladislav Polak (BUT), Adam Zizien (CTU), Karel Fliegel (CTU)
+>- Brno University of Technology (BUT) and Czech Technical University in Prague (CTU),, Czech Republic
