@@ -1,7 +1,8 @@
 # QFCOI
 ##  Enhancing Objective Quality Assessment for Compressed Omnidirectional Images with Fusion of Measures
 
-Repository provides a example code of objective OIQA method, Quality Fusion of Compressed Omnidirectional Images (QFCOI), optimized for compressed omnidirectional images by emerging codecs such as JPEG XL, AVIF, HEIC. In addition, the repository provides some validation results, such as for the development and test of performance evaluation methods.
+Repository provides a example code of objective OIQA method, Quality Fusion of Compressed Omnidirectional Images (QFCOI), optimized for compressed omnidirectional images by emerging codecs such as JPEG XL, AVIF, HEIC. In addition, the repository offers some validation results, such as for the development and test of performance evaluation methods.
+Completion will be in the next few days.
 
 
 
