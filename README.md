@@ -4,9 +4,14 @@
 Repository provides a example code of objective OIQA method, Quality Fusion of Compressed Omnidirectional Images (QFCOI), optimized for compressed omnidirectional images by emerging codecs such as JPEG XL, AVIF, HEIC. In addition, the repository offers some validation results, such as for the development and test of performance evaluation methods.
 Completion will be in the next few days.
 
+#### Dataset for validation
+Proposed method performance was validated on [OMNIQAD](https://zenodo.org/doi/10.5281/zenodo.7607070) and [CVIQ](https://github.com/sunwei925/CVIQDatabase) databases. 
+- OMNIQAD (5 reference images, 75 distorted images by AVIF, HEIC and JPEG XL)
+- CVIQ (16 reference images, 176 distorted images by HEVC)
 
 
 
+##
 Copyright (c) 2025 Marek Simka marek.sim2@gmail.com
 ##
 THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
