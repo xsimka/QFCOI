@@ -7,8 +7,8 @@ Completion will be in the next few days.
 ##
 ### Datasets for validation
 Proposed method performance was validated on [OMNIQAD](https://zenodo.org/doi/10.5281/zenodo.7607070) and [CVIQ](https://github.com/sunwei925/CVIQDatabase) databases. 
-- OMNIQAD (5 reference images, 75 distorted images by AVIF, HEIC and JPEG XL)
-- CVIQ (16 reference images, 176 distorted images by HEVC)
+- OMNIQAD (75 distorted images by AVIF, HEIC and JPEG XL based on 5 reference images)
+- CVIQ (176 distorted images by HEVC based on 16 reference images)
 
 
 
