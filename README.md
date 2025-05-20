@@ -6,7 +6,9 @@ Completion will be in the next few days.
 
 <!-- Tento text se nezobrazí v README     ![export_diagramu-1](https://github.com/user-attachments/assets/7fc04381-ac06-4968-9fad-0b86f202acdf)                -->
 
-<img src="https://github.com/user-attachments/assets/7fc04381-ac06-4968-9fad-0b86f202acdf" alt="export_diagramu-1" width="500"/>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/7fc04381-ac06-4968-9fad-0b86f202acdf" alt="export_diagramu-1" width="500"/>
+</p>
 
 
 ##
