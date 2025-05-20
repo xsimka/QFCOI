@@ -6,6 +6,9 @@ Completion will be in the next few days.
 
 ![export_diagramu-1](https://github.com/user-attachments/assets/7fc04381-ac06-4968-9fad-0b86f202acdf)
 
+<img src="https://github.com/user-attachments/assets/7fc04381-ac06-4968-9fad-0b86f202acdf" alt="export_diagramu-1" width="400"/>
+
+
 ##
 ### Datasets for validation
 Proposed method performance was validated on [OMNIQAD](https://zenodo.org/doi/10.5281/zenodo.7607070) and [CVIQ](https://github.com/sunwei925/CVIQDatabase) databases. 
