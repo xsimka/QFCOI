@@ -22,4 +22,4 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 ##
 ### Authors of the data
 >- Marek Simka (xsimka01@vut.cz) (BUT), Ladislav Polak (BUT), Adam Zizien (CTU), Karel Fliegel (CTU)
->- Brno University of Technology (BUT) and Czech Technical University in Prague (CTU),, Czech Republic
+>- Brno University of Technology (BUT) and Czech Technical University in Prague (CTU), Czech Republic
