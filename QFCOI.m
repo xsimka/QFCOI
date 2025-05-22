@@ -1,5 +1,5 @@
 function [QFCOI_value] = QFCOI(ref_image, test_image)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Implementation of objective QFCOI method for compressed omnidirectional images
 
 % If you use our method, please cite the following paper:
@@ -50,12 +50,14 @@ function [QFCOI_value] = QFCOI(ref_image, test_image)
 %%% Input:
 % (1) ref_image - reference omnidirectional image uncompressed
 % (2) test_image - distorted (compressed) omnidirectional image
+%%% Output:
+% QFCOI_value - image quality score, theoretical range [0,1]
 %%% Usage:
 % result = QFCOI(ref_image,test_image);
 % see example code
- 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Preprocessing  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Preprocessing  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%  Inspired by preprocess_metrix_mux.m for MS-SSIM and VIFp
 %%%  Author:    Matthew Gaubatz
 %%%  Version:   1.1
@@ -109,7 +111,7 @@ if D2 ~= 1
     end
 end
 
-%% QFCOI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% QFCOI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 MSSSIM_value = mssim_index(ref_image_preprocess, test_image_preprocess); 
 [~, FSIMc_value] = FeatureSIM(ref_image, test_image);
 VIFp_value = vifp_mscale(ref_image_preprocess, test_image_preprocess); 
@@ -123,7 +125,7 @@ QFCOI_value = (QFCOInonscaled) / (QFCOI_max); % min-max normalization as QFCOI_v
 
 end
 
-%% MS-SSIM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% MS-SSIM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [mssim, comp, detail] = mssim_index(img1, img2, nlevs,K,lpf)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%
@@ -532,7 +534,7 @@ return
 end
 
 
-%% FSIMc %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FSIMc %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [FSIM, FSIMc] = FeatureSIM(imageRef, imageDis)
 % authors. The authors make no representations about the suitability of
 % this software for any purpose. It is provided "as is" without express
@@ -970,7 +972,7 @@ function f = lowpassfilter(sze, cutoff, n)
 
 end
 
-%% VIFp %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% VIFp %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  function vifp=vifp_mscale(ref,dist)
 % -----------COPYRIGHT NOTICE STARTS WITH THIS LINE------------
 % Copyright (c) 2005 The University of Texas at Austin
