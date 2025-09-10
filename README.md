@@ -1,5 +1,5 @@
 # QFCOI
-##  Enhancing Objective Quality Assessment for Compressed Omnidirectional Images with Fusion of Measures
+##  [Enhancing Objective Quality Assessment for Compressed Omnidirectional Images with Fusion of Measures](https://ieeexplore.ieee.org/document/11121299)
 
 The repository provides an implementation of the objective OIQA method, Quality Fusion of Compressed Omnidirectional Images (QFCOI), optimized for compressed omnidirectional images by emerging codecs such as JPEG XL, AVIF, and HEIC. 
 In addition, the repository offers some validation results, such as for the development and testing of performance evaluation methods. Specifically, these are the outputs of the proposed method QFCOI for the application scenario of OMNIQAD images ([OMNIQAD_results](https://github.com/xsimka/QFCOI/blob/main/Data/OMNIQAD_results)) and QFCOI<sub>H</sub> for the CVIQ dataset ([CVIQ_results](https://github.com/xsimka/QFCOI/blob/main/Data/CVIQ_results)). All details are specified in the article. 
@@ -20,6 +20,24 @@ Proposed method performance was validated on [OMNIQAD](https://zenodo.org/doi/10
 - CVIQ (176 distorted images by HEVC based on 16 reference images)
 
 
+## 
+If you use QFCOI, the data file, or another part of this research, please cite the article:
+
+```
+M. Simka, L. Polak, A. Zizien, and K. Fliegel, "QFCOI-Enhancing Objective Quality Assessment for Compressed Omnidirectional Images With Fusion of Measures," in IEEE Access, vol. 13, pp. 140223-140238, 2025, doi: 10.1109/ACCESS.2025.3597214.
+```
+###### Citation in LaTeX:
+```
+@ARTICLE{11121299,
+  author={Simka, Marek and Polak, Ladislav and Zizien, Adam and Fliegel, Karel},
+  journal={IEEE Access}, 
+  title={QFCOI-Enhancing Objective Quality Assessment for Compressed Omnidirectional Images With Fusion of Measures}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={140223-140238},
+  doi={10.1109/ACCESS.2025.3597214}}
+```
 
 ##
 Copyright (c) 2025 Marek Simka marek.sim2@gmail.com
